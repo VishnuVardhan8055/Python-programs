@@ -1,0 +1,15 @@
+import dstructure
+from dstructure.DLL import DLL
+double_ll = DLL()
+double_ll.insert(23)
+double_ll.insert(34)
+double_ll.insert(27)
+double_ll.insert(38)
+double_ll.print()
+double_ll.delete_l()
+double_ll.print()
+double_ll.delete_f()
+double_ll.delete(27)
+double_ll.print()
+double_ll.getnodes()
+double_ll.print()
