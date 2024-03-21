@@ -1,6 +1,6 @@
 # Double Linked List
-class Node :
-    def __init__(self,data):
+class Node:
+    def __init__(self, data):
         self.data = data
         self.nref = None
         self.pref = None
@@ -14,7 +14,7 @@ class Double_LL:
         else:
             n = self.head
             while n is not None:
-                print(n.data,"--->",end="")
+                print(n.data, "--->", end="")
                 n = n.ref
     def printLL_reverse(self):
         if self.head is None:
@@ -24,14 +24,14 @@ class Double_LL:
             while n.nref is not None:
                 n = n.nref
             while n is not None:
-                print(n.data,"--->",end="")
+                print(n.data, "--->", end="")
                 n = n.pref
     def insert_empty(self,data):
         if self.head is None:
             new_node = Node(data)
             self.head = new_node
         else:
-            print("Limked List is not Empty")
+            print("Linked List is not Empty")
     
     def add_begin(self,data):
         new_node = Node(data)

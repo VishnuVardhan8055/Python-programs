@@ -1,10 +1,32 @@
 import requests
 from bs4 import BeautifulSoup
-req = requests.get("https://www.amazon.com/")
+query = input()
+req = requests.get(f"https://www.{query}.com/")
 soup = BeautifulSoup(req.content,"html.parser")
 print(soup.get_text())
 print(soup.prettify())
+#
 
+
+# from googlesearch import search
+#
+# def search_on_google(query):
+#     print("Searching on Google...")
+#     try:
+#         # Perform Google search and fetch top 5 results
+#         search_results = search(query,)# num=500, stop=5, pause=2)
+#         print("Search Results:")
+#         for index, result in enumerate(search_results, start=1):
+#             print(f"{index}. {result}")
+#     except Exception as e:
+#         print("Error:", e)
+#
+# def main():
+#     query = input("Enter your search query: ")
+#     search_on_google(query)
+#
+# if __name__ == "__main__":
+#     main()
 
 
 # def scrape_website(url):
